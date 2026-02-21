@@ -1,0 +1,12 @@
+{
+  "name": "deployments-test",
+  "version": "1.0.0",
+  "description": "Simple math app for deployment testing",
+  "main": "math.js",
+  "scripts": {
+    "test": "node --test math.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
