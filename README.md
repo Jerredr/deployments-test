@@ -9,3 +9,4 @@ This is a test repository for exploring GitHub deployments and MCP integration.
 
 ## Updates
 - Change 1: Added a new feature (simulated).
+- Change 2: Optimized the deployment process (simulated).
