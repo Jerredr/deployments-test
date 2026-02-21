@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math App | LaunchDarkly Test</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/launchdarkly-js-client-sdk@3"></script>
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>Math App</h1>
+            <div id="ld-status" class="status-badge">Initializing SDK...</div>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="number" id="num-a" placeholder="Number A" value="0">
+                <input type="number" id="num-b" placeholder="Number B" value="0">
+            </div>
+
+            <div class="button-group">
+                <button id="btn-sum" class="btn primary">Add (+)</button>
+                <button id="btn-subtract" class="btn secondary">Subtract (-)</button>
+            </div>
+
+            <div id="result-container" class="result-box">
+                <span class="label">Result:</span>
+                <span id="result-value">0</span>
+            </div>
+            
+            <div id="error-message" class="error-box hidden"></div>
+        </main>
+
+        <footer>
+            <p>Environment: <span class="highlight">Production</span></p>
+            <p>Feature Flag: <code id="flag-status">Unknown</code></p>
+        </footer>
+    </div>
+    <script src="math.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

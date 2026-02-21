@@ -10,4 +10,9 @@ function subtract(a, b, ldClient) {
   return a - b;
 }
 
-module.exports = { sum, subtract };
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { sum, subtract };
+} else {
+  // Browser environment
+  window.mathApp = { sum, subtract };
+}
